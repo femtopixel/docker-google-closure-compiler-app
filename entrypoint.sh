@@ -2,7 +2,7 @@
 
 set -e
 if [ "${1#-}" != "$1" ]; then
-    set -- google-closure-compiler "$@"
+    set -- java -jar /bin/compiler.jar "$@"
 fi
 
 exec "$@"

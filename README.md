@@ -3,7 +3,7 @@
 Google Closure Compiler APP - Docker Image
 ==========================================
 
-[![latest release](https://img.shields.io/github/release/femtopixel/docker-google-closure-compiler-api.svg "latest release")](http://github.com/femtopixel/docker-google-closure-compiler-api/releases)
+[![latest release](https://img.shields.io/github/release/femtopixel/docker-google-closure-compiler-app.svg "latest release")](http://github.com/femtopixel/docker-google-closure-compiler-app/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/femtopixel/google-closure-compiler-app.svg)](https://hub.docker.com/r/femtopixel/google-closure-compiler-app/)
 [![Docker Stars](https://img.shields.io/docker/stars/femtopixel/google-closure-compiler-app.svg)](https://hub.docker.com/r/femtopixel/google-closure-compiler-app/)
 [![Bitcoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/btc.png "Bitcoin donation")](https://m.freewallet.org/id/374ad82e/btc)

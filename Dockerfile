@@ -1,12 +1,18 @@
-FROM python:alpine3.6 as builder
+FROM openjdk:jre-alpine as builder
 
 COPY qemu-*-static /usr/bin/
 
 FROM builder
 
+ARG VERSION=webpack-v20180702
 LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
+LABEL version=${VERSION}
 
-RUN pip install google-closure-compiler-api
+RUN apk add wget unzip --update --virtual .build-deps && \
+wget "https://dl.google.com/closure-compiler/compiler-latest.zip" && \
+unzip "compiler-latest.zip" && \
+mv *.jar /bin/compiler.jar && \
+apk del wget --purge .build-deps
 COPY ./entrypoint.sh /bin/entrypoint
 ENTRYPOINT ["/bin/entrypoint"]
-CMD ["google-closure-compiler"]
+CMD ["java", "-jar", "/bin/compiler.jar"]

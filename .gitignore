@@ -1,6 +1,3 @@
-build
-*.egg-info
 qemu-*-static
-dist
 *.yaml
 .Dockerfile

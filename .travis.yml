@@ -11,11 +11,11 @@ before_install:
 
 script:
     - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_LOGIN" --password-stdin
-    - make build-docker
+    - make build
 
 deploy:
     provider: script
     script:
-        - make publish-docker latest
+        - make publish latest
     on:
         branch: master
