@@ -1,5 +1,5 @@
-VERSION ?= webpack-v20180702
-FULLVERSION ?= ${VERSION}
+VERSION ?= v20180716
+FULLVERSION ?= v20180716
 archs = amd64 arm32v6 arm64v8 i386
 
 .PHONY: all build publish latest
