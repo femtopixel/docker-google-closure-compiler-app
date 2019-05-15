@@ -1,5 +1,5 @@
-VERSION ?= v20190415
-FULLVERSION ?= v20190415
+VERSION ?= v20190513
+FULLVERSION ?= v20190513
 archs = amd64 arm32v6 arm64v8 i386
 
 .PHONY: all build publish latest
