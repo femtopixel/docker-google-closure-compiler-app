@@ -4,7 +4,7 @@ COPY qemu-*-static /usr/bin/
 
 FROM builder
 
-ARG VERSION=closure-compiler-parent-v20190618
+ARG VERSION=closure-compiler-parent-v20190709
 LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
 LABEL version=${VERSION}
 
