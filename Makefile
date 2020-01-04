@@ -1,5 +1,5 @@
-VERSION ?= closure-compiler-parent-v20191111
-FULLVERSION ?= closure-compiler-parent-v20191111
+VERSION ?= v20200101
+FULLVERSION ?= v20200101
 archs = amd64 arm32v6 arm64v8 i386
 
 .PHONY: all build publish latest
